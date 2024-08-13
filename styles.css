@@ -24,3 +24,7 @@ footer {
     text-align: center;
     margin-top: 50px;
 }
+
+.collapsed {
+    display: none;
+}
