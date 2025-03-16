@@ -1,0 +1,122 @@
+main {
+    display: flex;
+    margin: 1rem;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1.2rem;
+
+            .card-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+
+                h2 {
+                    font-size: var(--step-5);
+                    font-weight: 700;
+                }
+
+                p {
+                    background-color: var(--badge-background-color);
+                    font-size: var(--step-1);
+                    font-weight: 500;
+                    padding: 0.2rem 1.2rem;
+                    border-radius: 100px;
+                    color: light-dark(black, black);
+                }
+
+            }
+
+
+
+            .card-description {
+                p {
+                    font-size: var(--step-0);
+                    line-height: 1.55rem;
+                }
+
+            }
+
+            .card-money-colors {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+
+                .money-content {
+                    font-size: var(--step-4);
+                    font-weight: 400;
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    min-width: fit-content;
+                    max-width: 50%;
+                    gap: 1.5rem;
+
+                    span {
+                        color: red;
+                        text-decoration: line-through;
+                        font-size: 50%;
+                        align-self: center;
+                    }
+
+
+                }
+
+                .colors {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 0.5rem;
+
+
+                    div {
+                        width: clamp(5px, 30px, 60px);
+                        height: clamp(5px, 30px, 60px);
+                        border-radius: 1000px;
+                    }
+
+                    .dark {
+                        background-color: black;
+
+                    }
+
+                    .orange {
+                        background-color: orange;
+
+                    }
+
+                    .red {
+                        background-color: red;
+
+                    }
+
+                }
+            }
+
+            .card-button {
+                background-color: light-dark(black, black);
+                text-transform: uppercase;
+                font-size: var(--step-2);
+                font-weight: 500;
+                color: white;
+                gap: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 320px;
+
+            }
+
+        }
+    }
+
+}
