@@ -1,0 +1,113 @@
+:root {
+    --bg-light-color: #eeeeee;
+    --bg-dark-color: #292727;
+    --icon-color: var(--bg-dark-color);
+}
+
+body {
+    background-color: light-dark(var(--bg-light-color), var(--bg-dark-color));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --icon-color: var(--bg-light-color);
+
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: solid green 2px; */
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.top-row {
+    font-size: 3rem;
+    text-transform: uppercase;
+
+}
+
+.middle-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* border: yellow 2px solid; */
+    padding-inline: 5rem;
+
+}
+
+.side-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 5rem;
+    /* border: #eeeeee solid 2px; */
+}
+
+.side-col>h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.side-col>input {
+    width: 5rem;
+    height: 5rem;
+
+}
+
+.middle-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.board-annex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.table-row {
+    display: flex;
+    gap: 0.1rem;
+}
+
+.game-board {
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+
+}
+
+.game-cell {
+    width: 50px;
+    height: 50px;
+    border: rgb(182, 178, 178) 1px solid;
+
+}
+
+.icon-holder {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-holder>svg {
+
+    fill: var(--icon-color);
+
+
+
+
+}

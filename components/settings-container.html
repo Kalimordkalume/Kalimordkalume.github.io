@@ -1,0 +1,61 @@
+<form id="settings-container">
+    <div class="settings-input">
+        <label>Usuario 1:</label>
+        <input type="text" id="userName1">
+    </div>
+    <div class="settings-input">
+        <label>Usuario 2:</label>
+        <input type="text" id="userName2">
+    </div>
+    <div class="settings-input">
+        <label>
+            FX Sound:
+            <input type="checkbox" name="Efectos" id="soundEffectsToggle">
+        </label>
+
+    </div>
+    <div class="settings-input">
+        <label>Música:
+            <input type="checkbox" name="Música" id="musicEffectsToggle">
+        </label>
+
+    </div>
+    <div class="settings-input" id="difficult-selector-container">
+        <div class="game-mode-container">
+            <p>Modo de Juego:</p>
+        </div>
+        <label>
+            <img src="facil.png" alt="Fácil">
+            <input type="radio" name="difficulty" value="easy">
+            Normal
+        </label>
+        <label>
+            <img src="dificil.png" alt="Difícil">
+            <input type="radio" name="difficulty" value="hard">
+            Diagonal
+        </label>
+    </div>
+    <div class="settings-input">
+        <label for="">
+            <input type="checkbox" name="save" id="saveModeStatus">
+            Guardar Partida
+        </label>
+    </div>
+    <div class="settings-input">
+        <label for="">
+            Tiempo Turno:
+            <input type="number" id="turnDuration" value="30"><span class="timeStamp"
+                id="turnDurationTimeStamp"></span>segundos</span>
+        </label>
+
+    </div>
+    <div class="settings-input">
+        <label for="">
+            Tamaño Tablero:
+            <input type="number" id="boardSize" value="30"><span class="timeStamp" id="boardSizeUnit"></span>
+            casillas</span>
+        </label>
+    </div>
+
+
+</form>

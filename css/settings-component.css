@@ -1,0 +1,28 @@
+#settings-container {
+    border: solid red 2px;
+    margin-block: 5rem;
+    margin-inline: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+
+
+#difficult-selector-container {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.game-mode-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#difficult-selector-container>label {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
